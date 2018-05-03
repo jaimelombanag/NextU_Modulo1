@@ -13,6 +13,13 @@
 		AF8B24A5209B46DA003B3240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B24A4209B46DA003B3240 /* Assets.xcassets */; };
 		AF8B24A8209B46DA003B3240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8B24A6209B46DA003B3240 /* LaunchScreen.storyboard */; };
 		AF8B24B0209B5F8C003B3240 /* MaterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24AF209B5F8C003B3240 /* MaterTableViewController.swift */; };
+		AF8B24B2209B9EC2003B3240 /* TipoIdioma.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24B1209B9EC2003B3240 /* TipoIdioma.swift */; };
+		AF8B24B4209BA0EC003B3240 /* IdiomaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24B3209BA0EC003B3240 /* IdiomaViewController.swift */; };
+		AF8B24B6209BA101003B3240 /* Tema1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24B5209BA101003B3240 /* Tema1ViewController.swift */; };
+		AF8B24B8209BA10F003B3240 /* Tema2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24B7209BA10F003B3240 /* Tema2ViewController.swift */; };
+		AF8B24BA209BA11C003B3240 /* Tema3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24B9209BA11C003B3240 /* Tema3ViewController.swift */; };
+		AF8B24BC209BA129003B3240 /* Tema4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24BB209BA129003B3240 /* Tema4ViewController.swift */; };
+		AF8B24BE209BA135003B3240 /* Tema5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B24BD209BA135003B3240 /* Tema5ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		AF8B24A7209B46DA003B3240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF8B24A9209B46DA003B3240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF8B24AF209B5F8C003B3240 /* MaterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterTableViewController.swift; sourceTree = "<group>"; };
+		AF8B24B1209B9EC2003B3240 /* TipoIdioma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoIdioma.swift; sourceTree = "<group>"; };
+		AF8B24B3209BA0EC003B3240 /* IdiomaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdiomaViewController.swift; sourceTree = "<group>"; };
+		AF8B24B5209BA101003B3240 /* Tema1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema1ViewController.swift; sourceTree = "<group>"; };
+		AF8B24B7209BA10F003B3240 /* Tema2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema2ViewController.swift; sourceTree = "<group>"; };
+		AF8B24B9209BA11C003B3240 /* Tema3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema3ViewController.swift; sourceTree = "<group>"; };
+		AF8B24BB209BA129003B3240 /* Tema4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema4ViewController.swift; sourceTree = "<group>"; };
+		AF8B24BD209BA135003B3240 /* Tema5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema5ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +70,9 @@
 		AF8B249C209B46D9003B3240 /* Modulo1 */ = {
 			isa = PBXGroup;
 			children = (
+				AF8B24C0209BA16D003B3240 /* Clases */,
+				AF8B24BF209BA147003B3240 /* ViewController */,
 				AF8B249D209B46D9003B3240 /* AppDelegate.swift */,
-				AF8B249F209B46D9003B3240 /* ViewController.swift */,
 				AF8B24A1209B46D9003B3240 /* Main.storyboard */,
 				AF8B24A4209B46DA003B3240 /* Assets.xcassets */,
 				AF8B24A6209B46DA003B3240 /* LaunchScreen.storyboard */,
@@ -65,6 +80,28 @@
 				AF8B24AF209B5F8C003B3240 /* MaterTableViewController.swift */,
 			);
 			path = Modulo1;
+			sourceTree = "<group>";
+		};
+		AF8B24BF209BA147003B3240 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B249F209B46D9003B3240 /* ViewController.swift */,
+				AF8B24B3209BA0EC003B3240 /* IdiomaViewController.swift */,
+				AF8B24B5209BA101003B3240 /* Tema1ViewController.swift */,
+				AF8B24B7209BA10F003B3240 /* Tema2ViewController.swift */,
+				AF8B24B9209BA11C003B3240 /* Tema3ViewController.swift */,
+				AF8B24BB209BA129003B3240 /* Tema4ViewController.swift */,
+				AF8B24BD209BA135003B3240 /* Tema5ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF8B24C0209BA16D003B3240 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B24B1209B9EC2003B3240 /* TipoIdioma.swift */,
+			);
+			path = Clases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8B24A0209B46D9003B3240 /* ViewController.swift in Sources */,
+				AF8B24B8209BA10F003B3240 /* Tema2ViewController.swift in Sources */,
+				AF8B24B6209BA101003B3240 /* Tema1ViewController.swift in Sources */,
 				AF8B249E209B46D9003B3240 /* AppDelegate.swift in Sources */,
+				AF8B24B4209BA0EC003B3240 /* IdiomaViewController.swift in Sources */,
+				AF8B24BA209BA11C003B3240 /* Tema3ViewController.swift in Sources */,
+				AF8B24BC209BA129003B3240 /* Tema4ViewController.swift in Sources */,
+				AF8B24B2209B9EC2003B3240 /* TipoIdioma.swift in Sources */,
 				AF8B24B0209B5F8C003B3240 /* MaterTableViewController.swift in Sources */,
+				AF8B24BE209BA135003B3240 /* Tema5ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

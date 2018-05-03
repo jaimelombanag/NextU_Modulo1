@@ -10,9 +10,6 @@ import UIKit
 
 class MaterTableViewController: UITableViewController {
     
-    
-    //@IBOutlet weak var Seccion1: UITableViewSection!
-    
    
     @IBOutlet weak var Termino1: UILabel!
     @IBOutlet weak var Termino2: UILabel!
@@ -21,26 +18,42 @@ class MaterTableViewController: UITableViewController {
     @IBOutlet weak var Termino5: UILabel!
     @IBOutlet weak var lenguaje: UILabel!
     
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-        Termino1.text = "JAime"
-        Termino2.text = "JAime"
-        Termino3.text = "JAime"
-        Termino4.text = "JAime"
-        Termino5.text = "JAime"
-        lenguaje.text = "Cambio de Idioma"
-        
-        
-        
-        
         
     }
+    
+     override func viewWillAppear(_ animated: Bool) {
+        let tipoLnguaje = TipoIdioma()
+        var rta = tipoLnguaje.setLenguage()
+        print("El Lenguaje Actual es: ", rta)
+        
+        
+        if(rta == "español"){
+            
+            Termino1.text = "Algoritmo"
+            Termino2.text = "Array"
+            Termino3.text = "Comentario"
+            Termino4.text = "Compilación"
+            Termino5.text = "Herencia"
+            lenguaje.text = "Cambio de Idioma"
+            
+            
+        }else{
+            
+            Termino1.text = "Algorithm"
+            Termino2.text = "Array"
+            Termino3.text = "Comment"
+            Termino4.text = "Compilation"
+            Termino5.text = "Inheritance"
+            lenguaje.text = "Change of language"
+            
+        }
+        
+        tableView.reloadData()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -65,26 +78,48 @@ class MaterTableViewController: UITableViewController {
         }else{
              return 1
         }
-        
-       
     }
-    
-    
-    
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.backgroundColor = UIColor.lightGray
         
-        let headerLabel = UILabel(frame: CGRect(x: 30, y: 0, width:
-            tableView.bounds.size.width, height: tableView.bounds.size.height))
-        headerLabel.font = UIFont(name: "Verdana", size: 20)
-        headerLabel.textColor = UIColor.white
-        headerLabel.text = "CLAUDAI"
-        headerLabel.sizeToFit()
-        headerView.addSubview(headerLabel)
+        let tipoLnguaje = TipoIdioma()
         
-        return headerView
+        if(tipoLnguaje.setLenguage() == "español" ){
+        
+            let headerLabel = UILabel(frame: CGRect(x: 30, y: 0, width:
+                tableView.bounds.size.width, height: tableView.bounds.size.height))
+            headerLabel.font = UIFont(name: "Verdana", size: 20)
+            headerLabel.textColor = UIColor.white
+            
+            if section == 0 {
+                 headerLabel.text = "TERMINOS"
+            }else{
+                headerLabel.text = "CONFIGURACIÓN"
+            }
+            
+           
+            headerLabel.sizeToFit()
+            headerView.addSubview(headerLabel)
+            
+            return headerView
+        }else{
+            let headerLabel = UILabel(frame: CGRect(x: 30, y: 0, width:
+                tableView.bounds.size.width, height: tableView.bounds.size.height))
+            headerLabel.font = UIFont(name: "Verdana", size: 20)
+            headerLabel.textColor = UIColor.white
+            if section == 0 {
+                headerLabel.text = "TERMS"
+            }else{
+                headerLabel.text = "SETTINGS"
+            }
+            headerLabel.sizeToFit()
+            headerView.addSubview(headerLabel)
+            return headerView
+        }
+        
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
