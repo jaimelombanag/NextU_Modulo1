@@ -13,7 +13,7 @@
         <!--Root View Controller-->
         <scene sceneID="vVZ-Jp-9BX">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="rv4-Cf-25k" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="rv4-Cf-25k" customClass="MaterTableViewController" customModule="Modulo1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gmx-rK-5sT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,6 +154,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="tXY-4D-uRC"/>
+                    <connections>
+                        <outlet property="Termino1" destination="lhK-7f-6Vs" id="QOg-ug-ISS"/>
+                        <outlet property="Termino2" destination="eJz-Ic-ll8" id="fRs-aL-lan"/>
+                        <outlet property="Termino3" destination="2Pm-N3-85v" id="6RU-2Q-qa6"/>
+                        <outlet property="Termino4" destination="x3X-rI-WbI" id="1By-fR-ORn"/>
+                        <outlet property="Termino5" destination="f1a-fh-brh" id="HE5-pF-1VK"/>
+                        <outlet property="lenguaje" destination="gfq-i8-joQ" id="Chf-PT-lD0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ekh-Bl-DFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
