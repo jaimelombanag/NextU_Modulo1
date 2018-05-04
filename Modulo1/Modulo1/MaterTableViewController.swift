@@ -33,9 +33,9 @@ class MaterTableViewController: UITableViewController {
         if(rta == "español"){
             
             Termino1.text = "Algoritmo"
-            Termino2.text = "Array"
+            Termino2.text = "Uml"
             Termino3.text = "Comentario"
-            Termino4.text = "Compilación"
+            Termino4.text = "Lenguaje de Programacion"
             Termino5.text = "Herencia"
             lenguaje.text = "Cambio de Idioma"
             
@@ -43,9 +43,9 @@ class MaterTableViewController: UITableViewController {
         }else{
             
             Termino1.text = "Algorithm"
-            Termino2.text = "Array"
+            Termino2.text = "Uml"
             Termino3.text = "Comment"
-            Termino4.text = "Compilation"
+            Termino4.text = "Programming Language"
             Termino5.text = "Inheritance"
             lenguaje.text = "Change of language"
             

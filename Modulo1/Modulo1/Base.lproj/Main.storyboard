@@ -195,21 +195,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aVE-4D-y6Z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comentario" translatesAutoresizingMaskIntoConstraints="NO" id="aVE-4D-y6Z">
                                 <rect key="frame" x="16" y="111.5" width="343" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="qJD-QF-Lpb"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-mN-QRP">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-mN-QRP">
                                 <rect key="frame" x="16" y="261.5" width="343" height="317.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.43137254899999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Acz-57-HAQ" secondAttribute="trailing" id="5hK-II-W4j"/>
                             <constraint firstItem="4KD-os-7fZ" firstAttribute="top" secondItem="s9l-Ic-273" secondAttribute="top" constant="14" id="AfI-55-5dk"/>
@@ -246,8 +246,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51c-uS-4dL">
-                                <rect key="frame" x="0.0" y="20" width="375" height="30"/>
+                                <rect key="frame" x="16" y="232" width="343" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6md-Q8-uX3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Español">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -256,8 +260,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgQ-D5-Wne">
-                                <rect key="frame" x="0.0" y="58" width="375" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.63921568630000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="318" width="343" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Axj-gH-f0D"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="xTx-DU-U8s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Inglés">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -265,18 +274,31 @@
                                     <action selector="idiomaIngles:" destination="Azv-3D-LsU" eventType="touchUpInside" id="YQT-7k-mqE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione el idioma de su preferencia." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuC-MB-fhU">
+                                <rect key="frame" x="16" y="142" width="318.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.63921568630000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="51c-uS-4dL" firstAttribute="trailing" secondItem="MgQ-D5-Wne" secondAttribute="trailing" id="3JL-ak-sLK"/>
-                            <constraint firstAttribute="trailing" secondItem="51c-uS-4dL" secondAttribute="trailing" id="A6R-SV-YWG"/>
-                            <constraint firstItem="51c-uS-4dL" firstAttribute="leading" secondItem="8vI-n9-3bh" secondAttribute="leading" id="XSs-Vm-e0p"/>
-                            <constraint firstItem="51c-uS-4dL" firstAttribute="leading" secondItem="MgQ-D5-Wne" secondAttribute="leading" id="Zuk-aR-DEB"/>
-                            <constraint firstItem="MgQ-D5-Wne" firstAttribute="top" secondItem="51c-uS-4dL" secondAttribute="bottom" constant="8" symbolic="YES" id="dCU-cR-ce3"/>
-                            <constraint firstItem="51c-uS-4dL" firstAttribute="top" secondItem="jB2-md-5kM" secondAttribute="top" id="gRh-AU-QMH"/>
+                            <constraint firstItem="51c-uS-4dL" firstAttribute="leading" secondItem="8vI-n9-3bh" secondAttribute="leading" constant="16" id="Abj-HQ-2ec"/>
+                            <constraint firstItem="jB2-md-5kM" firstAttribute="bottom" secondItem="MgQ-D5-Wne" secondAttribute="bottom" constant="279" id="E2j-5f-ueY"/>
+                            <constraint firstItem="51c-uS-4dL" firstAttribute="trailing" secondItem="MgQ-D5-Wne" secondAttribute="trailing" id="Qce-Yo-snP"/>
+                            <constraint firstItem="MgQ-D5-Wne" firstAttribute="top" secondItem="51c-uS-4dL" secondAttribute="bottom" constant="16" id="gDH-oc-Boh"/>
+                            <constraint firstAttribute="trailing" secondItem="51c-uS-4dL" secondAttribute="trailing" constant="16" id="ica-gv-U8H"/>
+                            <constraint firstItem="IuC-MB-fhU" firstAttribute="top" secondItem="jB2-md-5kM" secondAttribute="top" constant="122" id="jVw-op-HOK"/>
+                            <constraint firstItem="IuC-MB-fhU" firstAttribute="leading" secondItem="8vI-n9-3bh" secondAttribute="leadingMargin" id="qVE-LB-Hdc"/>
+                            <constraint firstItem="51c-uS-4dL" firstAttribute="leading" secondItem="MgQ-D5-Wne" secondAttribute="leading" id="yUv-iX-gaA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jB2-md-5kM"/>
                     </view>
+                    <connections>
+                        <outlet property="btn_espanol" destination="51c-uS-4dL" id="ahw-7Z-CxI"/>
+                        <outlet property="btn_ingles" destination="MgQ-D5-Wne" id="4lK-16-pOY"/>
+                        <outlet property="lbl_titulo" destination="IuC-MB-fhU" id="pFo-Hw-bg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1f-bX-bPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -309,21 +331,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zJ5-WH-j9n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herencia" translatesAutoresizingMaskIntoConstraints="NO" id="zJ5-WH-j9n">
                                 <rect key="frame" x="16" y="126.5" width="351" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="bRZ-iZ-VqH"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P8S-wU-MRQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="P8S-wU-MRQ">
                                 <rect key="frame" x="16" y="273.5" width="351" height="312.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zJ5-WH-j9n" firstAttribute="trailing" secondItem="P8S-wU-MRQ" secondAttribute="trailing" id="1Ze-hY-9vg"/>
                             <constraint firstItem="Rnh-5U-QcV" firstAttribute="leading" secondItem="a6u-B8-Cnh" secondAttribute="leading" id="25T-Rn-bGa"/>
@@ -373,26 +395,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-k2-tX3">
-                                <rect key="frame" x="30" y="83" width="314" height="25.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <rect key="frame" x="30" y="83" width="314" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M0j-2h-Kk8">
-                                <rect key="frame" x="16" y="116.5" width="343" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lenguajes" translatesAutoresizingMaskIntoConstraints="NO" id="M0j-2h-Kk8">
+                                <rect key="frame" x="16" y="112.5" width="343" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="gEb-J2-IRu"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wVm-Tw-5Ze">
-                                <rect key="frame" x="16" y="265.5" width="343" height="319.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wVm-Tw-5Ze">
+                                <rect key="frame" x="16" y="261.5" width="343" height="323.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.26274509800000001" green="0.2901960784" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="M0j-2h-Kk8" firstAttribute="top" secondItem="XP6-k2-tX3" secondAttribute="bottom" constant="8" symbolic="YES" id="2KD-es-ROt"/>
                             <constraint firstItem="M0j-2h-Kk8" firstAttribute="leading" secondItem="tUu-tr-1lF" secondAttribute="leadingMargin" id="6a0-7d-g9N"/>
@@ -447,7 +469,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FIr-YV-kt2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="algoritmo" translatesAutoresizingMaskIntoConstraints="NO" id="FIr-YV-kt2">
                                 <rect key="frame" x="16" y="110.5" width="350" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="qoq-Hc-ICs"/>
@@ -461,7 +483,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90980392160000001" green="0.43137254899999999" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="n4J-lF-Di0" firstAttribute="top" secondItem="xb0-4y-Gs3" secondAttribute="top" constant="13" id="3qm-3G-d3p"/>
                             <constraint firstItem="FIr-YV-kt2" firstAttribute="top" secondItem="n4J-lF-Di0" secondAttribute="bottom" constant="8" symbolic="YES" id="BN7-7i-NbR"/>
@@ -511,26 +533,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB6-sw-Ji3">
-                                <rect key="frame" x="40" y="78" width="304" height="25.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <rect key="frame" x="40" y="78" width="304" height="21.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1uy-xR-HRf">
-                                <rect key="frame" x="16" y="111.5" width="351" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uml" translatesAutoresizingMaskIntoConstraints="NO" id="1uy-xR-HRf">
+                                <rect key="frame" x="16" y="107.5" width="351" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="rm0-0V-zXK"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DN7-Uw-1Uk">
-                                <rect key="frame" x="16" y="258.5" width="343" height="314.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="DN7-Uw-1Uk">
+                                <rect key="frame" x="16" y="254.5" width="343" height="318.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.63921568630000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DN7-Uw-1Uk" firstAttribute="centerX" secondItem="b6U-oJ-EqL" secondAttribute="centerX" id="4vQ-lb-Wuj"/>
                             <constraint firstAttribute="trailing" secondItem="b6U-oJ-EqL" secondAttribute="trailing" id="5FK-ml-tdL"/>
@@ -588,6 +610,13 @@
             <point key="canvasLocation" x="-818" y="144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="algoritmo" width="225" height="183"/>
+        <image name="comentario" width="705" height="366"/>
+        <image name="herencia" width="237" height="95"/>
+        <image name="lenguajes" width="356" height="178"/>
+        <image name="uml" width="146" height="86"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="7iB-0z-Y15"/>
     </inferredMetricsTieBreakers>
