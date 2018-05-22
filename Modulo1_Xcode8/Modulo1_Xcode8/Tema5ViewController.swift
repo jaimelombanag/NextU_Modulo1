@@ -1,25 +1,23 @@
 //
 //  Tema5ViewController.swift
-//  Modulo1
+//  Modulo1_Xcode8
 //
-//  Created by Jaime Lombana on 3/05/18.
+//  Created by Jaime Lombana on 10/05/18.
 //  Copyright © 2018 Jaime Lombana. All rights reserved.
 //
 
 import UIKit
 
 class Tema5ViewController: UIViewController {
-    
-    
-    
+
     @IBOutlet weak var titulo: UILabel!
     @IBOutlet weak var descripcion: UITextView!
     @IBOutlet weak var btn_wilkipedia: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         let tipoLenguaje = TipoIdioma()
@@ -49,7 +47,7 @@ class Tema5ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     @IBAction func urlWilkipedia(_ sender: Any) {
         
         let tipoLenguaje = TipoIdioma()
@@ -63,4 +61,5 @@ class Tema5ViewController: UIViewController {
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         }
     }
+
 }

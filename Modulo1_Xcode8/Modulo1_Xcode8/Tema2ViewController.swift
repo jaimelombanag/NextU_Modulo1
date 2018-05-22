@@ -1,21 +1,21 @@
 //
 //  Tema2ViewController.swift
-//  Modulo1
+//  Modulo1_Xcode8
 //
-//  Created by Jaime Lombana on 3/05/18.
+//  Created by Jaime Lombana on 10/05/18.
 //  Copyright © 2018 Jaime Lombana. All rights reserved.
 //
 
 import UIKit
 
 class Tema2ViewController: UIViewController {
-    
+
     @IBOutlet weak var titulo: UILabel!
     @IBOutlet weak var descripcion: UITextView!
     @IBOutlet weak var btn_wilkipedia: UIButton!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -43,7 +43,7 @@ class Tema2ViewController: UIViewController {
             
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,6 +63,6 @@ class Tema2ViewController: UIViewController {
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         }
     }
-
+    
 
 }
